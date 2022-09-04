@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Arial, Helvetica, sans-serif;
+
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding: 5px 2px;
+box-shadow: 0 0 8px rgba(0,0,0,.3);
+
+}
+.contenedor{
+    width: 96%;
+    padding: 10px;
+
+    gap: 1%;
+    display: grid;
+    grid-template-columns: 22% 60% 15%;
+    grid-template-areas: "mi b md";
+}
+.menu-izq{
+grid-area: mi;
+display: flex;
+justify-content: start;
+align-items: center;
+
+
+}
+.menu-der{
+grid-area: md;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+.buscador{
+grid-area: b;
+background: lightgrey;
+border:none;border-radius: 30px;
+padding: 0px 2px;
+
+}
+.buscador:hover{
+    background:darkgrey;
+
+}
+.link-icono{
+    width: 60px;
+    height: 48px;
+    font-size: 20px;
+    color: darkgrey;
+    border-radius: 24px;
+    line-height: 48px;
+    text-align: center;
+    
+}
+.img-perfil{
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+.link-negro{
+    height: 48px;
+    background: white;
+    line-height: 48px;
+    padding: 0px 10px;
+    font-size: 16px;
+    color: black;
+    border-radius: 25px;
+}
+.link-negro:hover,.link-negro.activo{
+    background: black;
+    color: white;
+}
+.logotipo{
+    font-size: 30px;
+    padding: 14px;
+    color: red;
+}
+.contenedor-pin-portada{
+    position: relative;
+}
+.menu-pin{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    padding: 10px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.contenedor-grid{
+    margin-top: 20px;
+    width: 96%;
+    gap: 15px;
+    columns: 5;
+}
+.pin{
+    width: 100%;
+    border-radius: 15px;
+}
+.menu-pin-top-item{
+    padding: 0 15px;
+    height: 48px;
+    background-color: red;
+    color: white;
+    display: inline-block;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 30px;
+
+}
+.menu-pin-top-item:hover{
+    background: darkred;
+    color:white;
+
+}
+.menu-pin-top-word{
+    padding: 0 15px;
+    height: 48px;
+    background-color: none;
+    color: white;
+    display: inline-block;
+    line-height: 48px;
+    text-align: center;
+}
+.menu-pin-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu-pin-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu-pin-bottom-item{
+    background-color: rgba(255, 255,255,.8);
+    height: 30px;
+    color:black;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 15px;
+    border-radius: 15px;
+}
+.menu-pin-bottom-item:hover{
+background:white;
+color:black;
+}
+.item-icono{
+    width: 30px;
+    padding: 0;
+    
+}
+.usuario{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+.contenedor-descripcion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contenedor-pin-portada .menu-pin{
+    opacity: 0;
+    
+}
+.contenedor-pin-portada:hover .menu-pin{
+    opacity: 1;
+}
